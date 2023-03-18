@@ -1,0 +1,22 @@
+.feedCard {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 0.1px solid var(--bg-header-bottom-border);
+  padding: 15px;
+}
+.feedCard__top {
+  display: flex;
+  /* justify-content: center;
+    align-items: center; */
+}
+.feedCard__top__avatar {
+  flex-direction: 0.2;
+}
+.feedCard__top__titleWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 0.7;
+}
+.feedCard__top__optionBtn {
+  flex: 0.1;
+}
