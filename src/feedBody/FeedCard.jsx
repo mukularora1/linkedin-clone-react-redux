@@ -1,6 +1,6 @@
 import Avatar from "../reusableComponent/Avatar";
-import CommentLogo from '../assets/CommentLogo'
-import RepostLogo from '../assets/RepostLogo'
+import CommentLogo from "../assets/CommentLogo";
+import RepostLogo from "../assets/RepostLogo";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SendIcon from "@mui/icons-material/Send";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
@@ -37,13 +37,13 @@ function FeedCard() {
           <div className="feedCard__bottom__btnTitle">Like</div>
         </div>
         <div className="feedCard__bottom__comment">
-        <div className="feedCard__bottom__icon">
+          <div className="feedCard__bottom__icon">
             <CommentLogo />
           </div>
           <div className="feedCard__bottom__btnTitle">Comment</div>
         </div>
         <div className="feedCard__bottom__repost">
-        <div className="feedCard__bottom__icon">
+          <div className="feedCard__bottom__icon">
             <RepostLogo />
           </div>
           <div className="feedCard__bottom__btnTitle">Repost</div>

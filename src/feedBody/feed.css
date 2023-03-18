@@ -1,9 +1,9 @@
 .feedBody {
-  width: 640px;
+  /* width: 640px; */
+  flex: 0.6;
 }
 .feedBody__top {
   display: flex;
-  padding: 15px;
 }
 .FeedSort {
   display: flex;

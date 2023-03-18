@@ -1,12 +1,12 @@
 import React from "react";
 import "./feed.css";
-import PostEditor from "./PostEditor";
-import FeedSort from "./FeedSort";
 import FeedCard from "./FeedCard";
+import FeedSort from "./FeedSort";
+import PostEditor from "./PostEditor";
 
 function Feed() {
   return (
-    <div className="feedBody">
+    <div className="feedBody b">
       <div className="feedBody__top">
         <PostEditor />
       </div>

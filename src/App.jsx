@@ -1,11 +1,17 @@
 import "./App.css";
-import Header from "./header/Header";
 import Feed from "./feedBody/Feed";
+import Header from "./header/Header";
+import RightSideWiget from "./rightSidewidget/RightSideWidget";
+import SideBar from "./sideBar/SideBar";
 function App() {
   return (
     <div className="app">
       <Header />
-      <Feed />
+      <div className="app__body">
+        <SideBar />
+        <Feed />
+        <RightSideWiget />
+      </div>
       {/* main body */}
       {/* side bar */}
       {/* feed */}
