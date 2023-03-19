@@ -1,10 +1,10 @@
 import React from "react";
-import "./posteditor.css";
+import JobLogo from "../assets/JobLogo";
 import PhotoLogo from "../assets/PhotoLogo";
 import VideoLogo from "../assets/VideoLogo";
 import WriteArticleLogo from "../assets/WriteArticleLogo";
-import JobLogo from "../assets/JobLogo";
 import Avatar from "../reusableComponent/Avatar";
+import "./posteditor.css";
 
 const options = [
   {
@@ -16,12 +16,12 @@ const options = [
     title: "Video",
   },
   {
-    component: <JobLogo height="24px" width="24px" />,
+    component: <JobLogo height="24px" width="24px" fillColor="var(--color-brand)" />,
     title: "Jobs",
   },
   {
     component: <WriteArticleLogo height="24px" width="24px" />,
-    title: "Photo",
+    title: "Write article",
   },
 ];
 function PostEditor() {
@@ -37,7 +37,7 @@ function PostEditor() {
       </div>
       <div className="postEditor__lower">
         {options.map((el, index) => (
-          <div className="postEditor__lower__item button--hover-cursor " key={index}>
+          <div className="postEditor__lower__item button--hover-cursor" key={index}>
             <div>{el.component}</div>
             <h3>{el.title}</h3>
           </div>

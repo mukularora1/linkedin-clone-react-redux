@@ -6,7 +6,7 @@ import PostEditor from "./PostEditor";
 
 function Feed() {
   return (
-    <div className="feedBody b">
+    <div className="feedBody">
       <div className="feedBody__top">
         <PostEditor />
       </div>

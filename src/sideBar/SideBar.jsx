@@ -4,7 +4,7 @@ import Avatar from "../reusableComponent/Avatar";
 import "./sidebar.css";
 function SideBar() {
   return (
-    <div className="sidebar b">
+    <div className="sidebar">
       <div className="sidebar__top">
         <div className="sidebar__top__bgImg">
           <img className="sidebar__top__img" src={bgimage} alt="bg-coder" />
@@ -18,13 +18,15 @@ function SideBar() {
         </div>
       </div>
       <div className="sidebar__middle">
-        <div className="sidebar__stat">
-          <div className="sidebar__stat__heading"></div>
-          <div className="sidebar__stat__number"></div>
-        </div>
-        <div className="sidebar__stat">
-          <div className="sidebar__stat__heading">Who's viewed your profile</div>
-          <div className="sidebar__stat__number">Impressions of your post</div>
+        <div className="sidebar__stat__wrapper">
+          <div className="sidebar__stat">
+            <div className="sidebar__stat__heading">Who's viewed your profile</div>
+            <div className="sidebar__stat__number">5656</div>
+          </div>
+          <div className="sidebar__stat">
+            <div className="sidebar__stat__heading">Impressions of your post</div>
+            <div className="sidebar__stat__number">554</div>
+          </div>
         </div>
       </div>
       <div className="sidebar__bottom"></div>

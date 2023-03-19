@@ -1,9 +1,13 @@
 .feedBody {
   /* width: 640px; */
   flex: 0.6;
+  margin: 0px 20px;
 }
 .feedBody__top {
   display: flex;
+}
+.feedBody__middle {
+  padding: 15px 5px;
 }
 .FeedSort {
   display: flex;
@@ -11,10 +15,10 @@
   align-items: center;
 }
 .feedSort__hr {
-  flex: 0.8;
+  flex: 0.85;
 }
 .feedSort__option {
-  flex: 0.2;
+  flex: 0.15;
   margin-left: 15px;
   color: var(--bg-header-icon);
 }

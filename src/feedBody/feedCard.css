@@ -2,21 +2,47 @@
   background-color: #fff;
   border-radius: 10px;
   border: 0.1px solid var(--bg-header-bottom-border);
-  padding: 15px;
+  padding: 10px;
 }
 .feedCard__top {
-  display: flex;
-  /* justify-content: center;
-    align-items: center; */
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
 }
 .feedCard__top__avatar {
-  flex-direction: 0.2;
+  margin: auto;
 }
 .feedCard__top__titleWrapper {
   display: flex;
   flex-direction: column;
-  flex: 0.7;
 }
 .feedCard__top__optionBtn {
-  flex: 0.1;
+  display: flex;
+  justify-content: flex-end;
+}
+.feedCard__bottom {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.feedCard__bottom__iconWrapper {
+  width: 100%;
+  border-radius: 5px;
+}
+.feedCard__bottom__iconWrapper:hover {
+  background-color: var(--bg-default);
+}
+.feedCard__bottom__icon {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.feedCard__top__title {
+  font-weight: 600;
+}
+.feedCard__bottom__btnTitle {
+  margin-left: 10px;
+}
+.feedCard__top__subtitle,
+.feedCard__top__timing {
+  color: var(--brand-gray-color);
 }

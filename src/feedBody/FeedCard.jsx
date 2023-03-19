@@ -1,9 +1,9 @@
-import Avatar from "../reusableComponent/Avatar";
-import CommentLogo from "../assets/CommentLogo";
-import RepostLogo from "../assets/RepostLogo";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import SendIcon from "@mui/icons-material/Send";
 import ThumbUpOutlinedIcon from "@mui/icons-material/ThumbUpOutlined";
+import CommentLogo from "../assets/CommentLogo";
+import RepostLogo from "../assets/RepostLogo";
+import Avatar from "../reusableComponent/Avatar";
 import "./feedCard.css";
 
 import React from "react";
@@ -11,16 +11,16 @@ import React from "react";
 function FeedCard() {
   return (
     <div className="feedCard">
-      <div className="feedCard__top">
-        <div className="feedCard__top__avatar">
+      <div className="feedCard__top ">
+        <div className="feedCard__top__avatar ">
           <Avatar width={"60px"} height={"60px"} />
         </div>
-        <div className="feedCard__top__titleWrapper">
+        <div className="feedCard__top__titleWrapper ">
           <div className="feedCard__top__title">Mukul Arora</div>
           <div className="feedCard__top__subtitle">React | Vue js | Nodejs | Typescript</div>
           <div className="feedCard__top__timing">16min</div>
         </div>
-        <div className="feedCard__top__optionBtn">
+        <div className="feedCard__top__optionBtn ">
           <MoreHorizIcon />
         </div>
       </div>
@@ -30,29 +30,29 @@ function FeedCard() {
         <div className="feedCard__middle__reaction"></div>
       </div>
       <div className="feedCard__bottom">
-        <div className="feedCard__bottom__like">
+        <div className="feedCard__bottom__iconWrapper">
           <div className="feedCard__bottom__icon">
-            <ThumbUpOutlinedIcon />
+            <ThumbUpOutlinedIcon sx={{ width: 30, height: 30 }} />
+            <div className="feedCard__bottom__btnTitle">Like</div>
           </div>
-          <div className="feedCard__bottom__btnTitle">Like</div>
         </div>
-        <div className="feedCard__bottom__comment">
+        <div className="feedCard__bottom__iconWrapper">
           <div className="feedCard__bottom__icon">
-            <CommentLogo />
+            <CommentLogo width={"30px"} height={"30px"} />
+            <div className="feedCard__bottom__btnTitle">Comment</div>
           </div>
-          <div className="feedCard__bottom__btnTitle">Comment</div>
         </div>
-        <div className="feedCard__bottom__repost">
+        <div className="feedCard__bottom__iconWrapper">
           <div className="feedCard__bottom__icon">
-            <RepostLogo />
+            <RepostLogo width={"30px"} height={"30px"} />
+            <div className="feedCard__bottom__btnTitle">Repost</div>
           </div>
-          <div className="feedCard__bottom__btnTitle">Repost</div>
         </div>
-        <div className="feedCard__bottom__share">
+        <div className="feedCard__bottom__iconWrapper">
           <div className="feedCard__bottom__icon">
-            <SendIcon />
+            <SendIcon width={"30px"} height={"30px"} />
+            <div className="feedCard__bottom__btnTitle">Share</div>
           </div>
-          <div className="feedCard__bottom__btnTitle">Share</div>
         </div>
       </div>
     </div>

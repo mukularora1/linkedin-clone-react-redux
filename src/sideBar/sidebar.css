@@ -2,12 +2,17 @@
   flex: 0.2;
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
+  border-radius: 10px;
 }
 .sidebar__top {
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.sidebar__top__userName {
+  font-weight: 600;
 }
 .sidebar__top__bgImg {
   width: 100%;
@@ -29,8 +34,24 @@
   justify-content: center;
   padding: 10px;
   align-items: center;
+  color: var(--brand-gray-color);
 }
 .sidebar__top__avatar {
   position: relative;
   bottom: 25px;
+}
+.sidebar__middle {
+  border-top: 1px solid var(--border-color);
+}
+.sidebar__stat__wrapper {
+  margin: 10px;
+}
+.sidebar__stat {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin: 20px 0;
+}
+.sidebar__stat__heading {
+  color: var(--brand-gray-color);
+  font-weight: 500;
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import "./avatar.css";
 import AvatarImage from "../assets/avatar.jpeg";
+import "./avatar.css";
 function Avatar({ width, height }) {
   return (
     <div className="avatar xy--center" style={{ width: width, height: height }}>

@@ -1,13 +1,13 @@
-import LinkedinLogo from "../assets/LinkedinLogo";
-import "./mainHeader.css";
-import SearchIcon from "../assets/SearchIcon.svg";
-import HomeLogo from "../assets/HomeLogo";
 import ConnectLogo from "../assets/ConnectLogo";
+import HomeLogo from "../assets/HomeLogo";
 import JobLogo from "../assets/JobLogo";
+import LinkedinLogo from "../assets/LinkedinLogo";
 import MessageLogo from "../assets/MessageLogo";
 import NotificationLogo from "../assets/NotificationLogo";
 import PostAJobLogo from "../assets/PostAJobLogo";
+import SearchIcon from "../assets/SearchIcon.svg";
 import WorkLogo from "../assets/WorkLogo";
+import "./mainHeader.css";
 const dimention = {
   height: "24px",
   width: "24px",
@@ -31,9 +31,9 @@ function Header() {
         <img src={SearchIcon} alt="search icon" className="header__searchBar__searchIcon" />
         <input type="text" placeholder="search" />
       </div>
-      <div className="header__headerOptions flex-direction-row b">
+      <div className="header__headerOptions flex-direction-row">
         {options.map((option, index) => (
-          <div className="header__headerOptions__option xy--center flex-direction-column button--hover-cursor b" key={index}>
+          <div className="header__headerOptions__option xy--center flex-direction-column button--hover-cursor" key={index}>
             {option.component}
             <h3 className="title">{option.title}</h3>
           </div>
