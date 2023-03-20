@@ -1,6 +1,15 @@
 import * as React from "react";
 const SVGComponent = ({ width, height }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" fill="#000000" width={width} height={height} viewBox="0 0 24 24" id="repost-2" data-name="Flat Line" className="icon flat-line">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="#000000"
+    width={width}
+    height={height}
+    viewBox="0 0 24 24"
+    id="repost-2"
+    data-name="Flat Line"
+    className="icon flat-line"
+  >
     <path
       id="primary"
       d="M18,6V4a1,1,0,0,0-1-1H7A1,1,0,0,0,6,4V14"

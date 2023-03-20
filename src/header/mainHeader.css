@@ -3,7 +3,21 @@
   padding: 10px;
   border-bottom: 0.1px solid var(--bg-header-bottom-border);
 }
-
+.header__wrapper {
+  width: 1128px;
+  display: flex;
+}
+.header__left {
+  display: flex;
+  flex: 0.4;
+}
+.header__linkedLogo {
+  display: flex;
+  align-items: center;
+}
+.header__right {
+  flex: 0.6;
+}
 .header__searchBar {
   display: flex;
   width: fit-content;
@@ -17,7 +31,7 @@
 }
 .header .header__searchBar input {
   width: 280px;
-  height: 35px;
+  height: 30px;
   border: none;
   outline: none;
   background-color: var(--bg-default);

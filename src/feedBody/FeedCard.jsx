@@ -17,7 +17,9 @@ function FeedCard() {
         </div>
         <div className="feedCard__top__titleWrapper ">
           <div className="feedCard__top__title">Mukul Arora</div>
-          <div className="feedCard__top__subtitle">React | Vue js | Nodejs | Typescript</div>
+          <div className="feedCard__top__subtitle">
+            React | Vue js | Nodejs | Typescript
+          </div>
           <div className="feedCard__top__timing">16min</div>
         </div>
         <div className="feedCard__top__optionBtn ">

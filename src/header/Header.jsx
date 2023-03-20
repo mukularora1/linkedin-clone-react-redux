@@ -13,31 +13,78 @@ const dimention = {
   width: "24px",
 };
 const options = [
-  { component: <HomeLogo height={dimention.height} width={dimention.width} />, title: "Home" },
-  { component: <ConnectLogo height={dimention.height} width={dimention.width} />, title: "My Network" },
-  { component: <JobLogo height={dimention.height} width={dimention.width} />, title: "Jobs" },
-  { component: <MessageLogo height={dimention.height} width={dimention.width} />, title: "Messaging" },
-  { component: <NotificationLogo height={dimention.height} width={dimention.width} />, title: "Notifications" },
-  { component: <WorkLogo height={dimention.height} width={dimention.width} />, title: "Work" },
-  { component: <PostAJobLogo height={dimention.height} width={dimention.width} />, title: "Post a Job" },
+  {
+    component: <HomeLogo height={dimention.height} width={dimention.width} />,
+    title: "Home",
+  },
+  {
+    component: (
+      <ConnectLogo height={dimention.height} width={dimention.width} />
+    ),
+    title: "My Network",
+  },
+  {
+    component: <JobLogo height={dimention.height} width={dimention.width} />,
+    title: "Jobs",
+  },
+  {
+    component: (
+      <MessageLogo height={dimention.height} width={dimention.width} />
+    ),
+    title: "Messaging",
+  },
+  {
+    component: (
+      <NotificationLogo height={dimention.height} width={dimention.width} />
+    ),
+    title: "Notifications",
+  },
+  {
+    component: (
+      <hr style={{ height: "100%", color: "var(--brand-gray-color)" }} />
+    ),
+  },
+  {
+    component: <WorkLogo height={dimention.height} width={dimention.width} />,
+    title: "Work",
+  },
+  {
+    component: (
+      <PostAJobLogo height={dimention.height} width={dimention.width} />
+    ),
+    title: "Post a Job",
+  },
 ];
 function Header() {
   return (
     <div className="header xy--center">
-      <div className="header__linkedLogo">
-        <LinkedinLogo width={"35px"} height={"35px"} />
-      </div>
-      <div className="header__searchBar">
-        <img src={SearchIcon} alt="search icon" className="header__searchBar__searchIcon" />
-        <input type="text" placeholder="search" />
-      </div>
-      <div className="header__headerOptions flex-direction-row">
-        {options.map((option, index) => (
-          <div className="header__headerOptions__option xy--center flex-direction-column button--hover-cursor" key={index}>
-            {option.component}
-            <h3 className="title">{option.title}</h3>
+      <div className="header__wrapper">
+        <div className="header__left">
+          <div className="header__linkedLogo">
+            <LinkedinLogo width={"40px"} height={"40px"} />
           </div>
-        ))}
+          <div className="header__searchBar">
+            <img
+              src={SearchIcon}
+              alt="search icon"
+              className="header__searchBar__searchIcon"
+            />
+            <input type="text" placeholder="search" />
+          </div>
+        </div>
+        <nav className="header__right">
+          <div className="header__headerOptions flex-direction-row">
+            {options.map((option, index) => (
+              <div
+                className="header__headerOptions__option xy--center flex-direction-column button--hover-cursor"
+                key={index}
+              >
+                {option.component}
+                <h3 className="title">{option.title ? option.title : ""}</h3>
+              </div>
+            ))}
+          </div>
+        </nav>
       </div>
     </div>
   );

@@ -14,17 +14,24 @@ function SideBar() {
         </div>
         <div className="sidebar__top__detail">
           <div className="sidebar__top__userName">Mukul Arora</div>
-          <div className="sidebar__top__about">React JS | Vue JS | Node JS | Typescript | HTML | CSS | Full Stack Developer</div>
+          <div className="sidebar__top__about">
+            React JS | Vue JS | Node JS | Typescript | HTML | CSS | Full Stack
+            Developer
+          </div>
         </div>
       </div>
       <div className="sidebar__middle">
         <div className="sidebar__stat__wrapper">
           <div className="sidebar__stat">
-            <div className="sidebar__stat__heading">Who's viewed your profile</div>
+            <div className="sidebar__stat__heading">
+              Who's viewed your profile
+            </div>
             <div className="sidebar__stat__number">5656</div>
           </div>
           <div className="sidebar__stat">
-            <div className="sidebar__stat__heading">Impressions of your post</div>
+            <div className="sidebar__stat__heading">
+              Impressions of your post
+            </div>
             <div className="sidebar__stat__number">554</div>
           </div>
         </div>

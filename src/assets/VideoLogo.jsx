@@ -12,7 +12,8 @@ function VideoLogo({ width, height }) {
         style={{ fill: "red" }}
         width={width}
         height={height}
-        focusable="false">
+        focusable="false"
+      >
         <path d="M19 4H5a3 3 0 00-3 3v10a3 3 0 003 3h14a3 3 0 003-3V7a3 3 0 00-3-3zm-9 12V8l6 4z"></path>
       </svg>
     </>

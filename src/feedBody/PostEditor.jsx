@@ -16,7 +16,9 @@ const options = [
     title: "Video",
   },
   {
-    component: <JobLogo height="24px" width="24px" fillColor="var(--color-brand)" />,
+    component: (
+      <JobLogo height="24px" width="24px" fillColor="var(--color-brand)" />
+    ),
     title: "Jobs",
   },
   {
@@ -32,12 +34,19 @@ function PostEditor() {
           <Avatar width={"50px"} height={"50px"} />
         </div>
         <div className="postEditor__upper__inputBoxContainer">
-          <input type="text" className="postEditor__upper__inputBox" placeholder="Start a post" />
+          <input
+            type="text"
+            className="postEditor__upper__inputBox"
+            placeholder="Start a post"
+          />
         </div>
       </div>
       <div className="postEditor__lower">
         {options.map((el, index) => (
-          <div className="postEditor__lower__item button--hover-cursor" key={index}>
+          <div
+            className="postEditor__lower__item button--hover-cursor"
+            key={index}
+          >
             <div>{el.component}</div>
             <h3>{el.title}</h3>
           </div>
