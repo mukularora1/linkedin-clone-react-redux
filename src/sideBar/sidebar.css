@@ -47,11 +47,18 @@
   margin: 10px;
 }
 .sidebar__stat {
-  display: grid;
-  grid-template-columns: 80% 20%;
+  /* display: grid;
+  grid-template-columns: 80% 20%; */
+  display: flex;
+  justify-content: space-between;
+
   margin: 20px 0;
 }
 .sidebar__stat__heading {
   color: var(--brand-gray-color);
+  font-weight: 500;
+}
+.sidebar__stat__number {
+  color: var(--color-brand);
   font-weight: 500;
 }

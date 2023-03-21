@@ -1,14 +1,12 @@
 import "./App.css";
-// import Feed from "./feedBody/Feed";
-// import RightSideWiget from "./rightSidewidget/RightSideWidget";
-// import SideBar from "./sideBar/SideBar";
 import Header from "./header/Header";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+import Routes from "./routes/index";
 function App() {
   return (
     <div className="app">
       <Header />
-      <Home />
+      <Routes />
     </div>
   );
 }

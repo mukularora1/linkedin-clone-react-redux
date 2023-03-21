@@ -7,7 +7,9 @@ import Avatar from "../reusableComponent/Avatar";
 import "./feedCard.css";
 
 import React from "react";
-
+const likeClicked = (e) => {
+  console.log(e);
+};
 function FeedCard() {
   return (
     <div className="feedCard">
@@ -17,9 +19,7 @@ function FeedCard() {
         </div>
         <div className="feedCard__top__titleWrapper ">
           <div className="feedCard__top__title">Mukul Arora</div>
-          <div className="feedCard__top__subtitle">
-            React | Vue js | Nodejs | Typescript
-          </div>
+          <div className="feedCard__top__subtitle">React | Vue js | Nodejs | Typescript</div>
           <div className="feedCard__top__timing">16min</div>
         </div>
         <div className="feedCard__top__optionBtn ">
@@ -34,7 +34,7 @@ function FeedCard() {
       <div className="feedCard__bottom">
         <div className="feedCard__bottom__iconWrapper">
           <div className="feedCard__bottom__icon">
-            <ThumbUpOutlinedIcon sx={{ width: 30, height: 30 }} />
+            <ThumbUpOutlinedIcon sx={{ width: 30, height: 30 }} onClick={likeClicked} />
             <div className="feedCard__bottom__btnTitle">Like</div>
           </div>
         </div>

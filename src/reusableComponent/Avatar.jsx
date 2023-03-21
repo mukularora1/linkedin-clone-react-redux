@@ -1,12 +1,13 @@
+import { Avatar } from "@mui/material";
 import React from "react";
 import AvatarImage from "../assets/avatar.jpeg";
 import "./avatar.css";
-function Avatar({ width, height }) {
+function AvatarImg({ width, height }) {
   return (
     <div className="avatar xy--center" style={{ width: width, height: height }}>
-      <img src={AvatarImage} alt="avatar" className="avatar__img" />
+      <Avatar src={AvatarImage} sx={{ width: width, height: height }} alt="avatar" className="avatar__img" />
     </div>
   );
 }
 
-export default Avatar;
+export default AvatarImg;

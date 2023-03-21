@@ -16,9 +16,7 @@ const options = [
     title: "Video",
   },
   {
-    component: (
-      <JobLogo height="24px" width="24px" fillColor="var(--color-brand)" />
-    ),
+    component: <JobLogo height="24px" width="24px" fillColor="var(--color-brand)" />,
     title: "Jobs",
   },
   {
@@ -27,6 +25,11 @@ const options = [
   },
 ];
 function PostEditor() {
+  const handleClick = (e) => {
+    if (e.which === 13) {
+      console.log(e.which);
+    }
+  };
   return (
     <div className="postEditor xy--center flex-direction-column">
       <div className="postEditor__upper">
@@ -34,19 +37,12 @@ function PostEditor() {
           <Avatar width={"50px"} height={"50px"} />
         </div>
         <div className="postEditor__upper__inputBoxContainer">
-          <input
-            type="text"
-            className="postEditor__upper__inputBox"
-            placeholder="Start a post"
-          />
+          <input type="text" className="postEditor__upper__inputBox" placeholder="Start a post" onKeyPress={handleClick} />
         </div>
       </div>
       <div className="postEditor__lower">
         {options.map((el, index) => (
-          <div
-            className="postEditor__lower__item button--hover-cursor"
-            key={index}
-          >
+          <div className="postEditor__lower__item button--hover-cursor" key={index}>
             <div>{el.component}</div>
             <h3>{el.title}</h3>
           </div>
