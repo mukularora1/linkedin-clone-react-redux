@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import JobLogo from "../assets/JobLogo";
 import PhotoLogo from "../assets/PhotoLogo";
 import VideoLogo from "../assets/VideoLogo";
 import WriteArticleLogo from "../assets/WriteArticleLogo";
+import { setPostArr } from "../features/post/postSlice";
 import Avatar from "../reusableComponent/Avatar";
 import "./posteditor.css";
 
@@ -25,10 +27,17 @@ const options = [
   },
 ];
 function PostEditor() {
-  const handleClick = (e) => {
+  const dispatch = useDispatch();
+  const [inputString, setInputString] = useState(() => "");
+
+  const handleEnter = (e) => {
     if (e.which === 13) {
-      console.log(e.which);
+      dispatch(setPostArr(inputString));
+      setInputString("");
     }
+  };
+  const handlePostChange = (e) => {
+    setInputString(e.target.value);
   };
   return (
     <div className="postEditor xy--center flex-direction-column">
@@ -37,7 +46,7 @@ function PostEditor() {
           <Avatar width={"50px"} height={"50px"} />
         </div>
         <div className="postEditor__upper__inputBoxContainer">
-          <input type="text" className="postEditor__upper__inputBox" placeholder="Start a post" onKeyPress={handleClick} />
+          <input value={inputString} type="text" className="postEditor__upper__inputBox" placeholder="Start a post" onKeyPress={handleEnter} onChange={handlePostChange} />
         </div>
       </div>
       <div className="postEditor__lower">

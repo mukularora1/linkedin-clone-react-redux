@@ -56,7 +56,6 @@ const options = [
 ];
 function Header() {
   const location = useLocation();
-  console.log(location);
   return (
     <div className="header xy--center">
       <div className="header__wrapper">
@@ -74,6 +73,7 @@ function Header() {
             {options.map((option, index) =>
               option.pathName ? (
                 <Link
+                  key={index}
                   to={option.pathName}
                   style={location.pathname === option.pathName ? { textDecoration: "none", color: "black", borderBottom: "2px solid black" } : { textDecoration: "none", color: "black" }}>
                   <div className="header__headerOptions__option xy--center flex-direction-column button--hover-cursor" key={index}>

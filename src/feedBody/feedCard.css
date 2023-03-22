@@ -1,4 +1,5 @@
 .feedCard {
+  margin: 10px;
   background-color: #fff;
   border-radius: 10px;
   border: 0.1px solid var(--bg-header-bottom-border);
@@ -45,4 +46,7 @@
 .feedCard__top__subtitle,
 .feedCard__top__timing {
   color: var(--brand-gray-color);
+}
+.feedCard__middle__blog {
+  margin-left: 80px;
 }

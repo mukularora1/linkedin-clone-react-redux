@@ -10,7 +10,7 @@ import React from "react";
 const likeClicked = (e) => {
   console.log(e);
 };
-function FeedCard() {
+function FeedCard(props) {
   return (
     <div className="feedCard">
       <div className="feedCard__top ">
@@ -27,7 +27,7 @@ function FeedCard() {
         </div>
       </div>
       <div className="feedCard__middle">
-        <div className="feedCard__middle__blog"></div>
+        <div className="feedCard__middle__blog">{props.data}</div>
         <div className="feedCard__middle__img"></div>
         <div className="feedCard__middle__reaction"></div>
       </div>

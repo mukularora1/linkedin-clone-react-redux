@@ -5,12 +5,16 @@ const MainRoutes = [
   {
     path: "/",
     element: <Home />,
-    children: [
-      {
-        path: "/network",
-        element: <Error />,
-      },
-    ],
+    // children: [
+    //   {
+    //     path: "/network",
+    //     element: <Error />,
+    //   },
+    // ],
+  },
+  {
+    path: "*",
+    element: <Error />,
   },
 ];
 
