@@ -1,0 +1,7 @@
+.network {
+  display: grid;
+  margin: auto;
+  width: 1150px;
+  min-height: 50vh;
+  grid-template-columns: 30% 70%;
+}

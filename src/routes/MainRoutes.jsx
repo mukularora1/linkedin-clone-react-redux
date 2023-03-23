@@ -1,4 +1,5 @@
 import React from "react";
+import Network from "../network/Network";
 import Error from "../pages/Error";
 import Home from "../pages/Home";
 const MainRoutes = [
@@ -12,6 +13,11 @@ const MainRoutes = [
     //   },
     // ],
   },
+  {
+    path: "/network",
+    element: <Network />,
+  },
+
   {
     path: "*",
     element: <Error />,

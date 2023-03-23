@@ -26,6 +26,7 @@ const options = [
     title: "Write article",
   },
 ];
+
 function PostEditor() {
   const dispatch = useDispatch();
   const [inputString, setInputString] = useState(() => "");
@@ -36,9 +37,21 @@ function PostEditor() {
       setInputString("");
     }
   };
+
   const handlePostChange = (e) => {
     setInputString(e.target.value);
   };
+
+  const handlePhotoClick = () => {
+    fileInputRef.current.click();
+  };
+
+  const handleFileInputChange = (e) => {
+    // handle the file input change event
+  };
+
+  const fileInputRef = React.useRef(null);
+  console.log(fileInputRef);
   return (
     <div className="postEditor xy--center flex-direction-column">
       <div className="postEditor__upper">
@@ -50,12 +63,24 @@ function PostEditor() {
         </div>
       </div>
       <div className="postEditor__lower">
-        {options.map((el, index) => (
-          <div className="postEditor__lower__item button--hover-cursor" key={index}>
-            <div>{el.component}</div>
-            <h3>{el.title}</h3>
-          </div>
-        ))}
+        {options.map((el, index) => {
+          if (el.title === "Photo") {
+            return (
+              <div className="postEditor__lower__item button--hover-cursor" key={index} onClick={handlePhotoClick}>
+                <div>{el.component}</div>
+                <h3>{el.title}</h3>
+                <input type="file" ref={fileInputRef} onChange={handleFileInputChange} style={{ display: "none" }} />
+              </div>
+            );
+          } else {
+            return (
+              <div className="postEditor__lower__item button--hover-cursor" key={index}>
+                <div>{el.component}</div>
+                <h3>{el.title}</h3>
+              </div>
+            );
+          }
+        })}
       </div>
     </div>
   );
