@@ -1,6 +1,7 @@
 import React from "react";
 import "./network.css";
 import NetworkLeftOptions from "./NetworkLeftOptions";
+import NetworkRightFeed from "./NetworkRightFeed";
 function Network() {
   return (
     <>
@@ -8,7 +9,9 @@ function Network() {
         <div className="network__left">
           <NetworkLeftOptions />
         </div>
-        <div className="network__right"></div>
+        <div className="network__right">
+          <NetworkRightFeed />
+        </div>
       </div>
     </>
   );

@@ -1,6 +1,5 @@
 .networkOptions {
   width: 100%;
-  min-height: 100%;
   background-color: var(--bg-card);
   border-radius: 10px;
   border: 1px solid var(--border-color);
@@ -13,6 +12,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+}
+.networkOptions__row:hover {
+  background-color: var(--bg-default);
 }
 .networkOptions__left {
   display: flex;
@@ -20,4 +23,15 @@
 }
 .networkOptions__row__icon {
   margin: 0 5px;
+}
+.networkOptions__showbtn button {
+  margin: 5px;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  border-radius: 5px solid black;
+  cursor: pointer;
+}
+.networkOptions__showbtn button:hover {
+  background-color: var(--bg-default);
 }
