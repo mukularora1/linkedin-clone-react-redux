@@ -5,6 +5,7 @@
   background-color: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 .networkRightFeed__card__header {
   display: flex;
@@ -47,4 +48,10 @@
   border: 2px solid var(--color-brand);
   color: var(--color-brand);
   border-radius: 25px;
+}
+.networkRightFeed__suggestionCardWrapper {
+  width: 100%;
+  display: grid;
+  padding: 5px;
+  grid-template-columns: 25% 25% 25% 25%;
 }

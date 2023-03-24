@@ -1,9 +1,16 @@
 import React from "react";
 
-function FollowersLogo({ width, height }) {
+function FollowersLogo({ width, height, bgColor }) {
   return (
-    <svg aria-hidden="true" className="mr4" xmlns="http://www.w3.org/2000/svg" style={{ width: width, height: height }} viewBox="0 0 24 24" data-supported-dps="24x24" data-test-icon="person-medium">
-      <use href="#person-medium" width="24" height="24"></use>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      data-supported-dps="16x16"
+      fill="currentColor"
+      className="mr4"
+      style={{ width: width, height: height, fill: bgColor }}
+      focusable="false">
+      <path d="M9 4a3 3 0 11-3-3 3 3 0 013 3zM6.75 8h-1.5A2.25 2.25 0 003 10.25V15h6v-4.75A2.25 2.25 0 006.75 8zM13 8V6h-1v2h-2v1h2v2h1V9h2V8z"></path>
     </svg>
   );
 }
