@@ -14,14 +14,17 @@
 }
 .joinNowBtn {
   border: none;
+  margin: 0 5px;
   padding: 10px 25px;
   background-color: transparent;
   color: var(--brand-gray-color);
   font-weight: 600;
   font-size: medium;
   border-radius: 25px;
+  cursor: pointer;
 }
 .signInBtn {
+  margin: 0 5px;
   border: 2px solid var(--color-brand);
   padding: 10px 25px;
   background-color: transparent;
@@ -29,4 +32,31 @@
   font-weight: 600;
   font-size: medium;
   border-radius: 25px;
+  cursor: pointer;
+}
+.verticleLine {
+  border-left: 0.5px solid var(--brand-gray-color);
+}
+.signIn__headerOptions {
+  display: flex;
+}
+.signInBtn:hover,
+.joinNowBtn:hover {
+  background-color: var(--bg-default);
+}
+.signIn__headerOptionWrapper {
+  display: flex;
+  align-items: center;
+}
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.mainWrapper:hover .signIn__headerOption svg {
+  fill: var(--bg-header-icon);
+  color: var(--bg-header-icon);
 }
